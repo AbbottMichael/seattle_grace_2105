@@ -13,4 +13,8 @@ class Hospital
     doctors.sum { |doctor| doctor.salary  }
   end
 
+  def lowest_paid_doctor
+    doctors.min { |doctor| doctor.salary  }
+  end
+
 end
