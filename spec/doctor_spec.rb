@@ -17,7 +17,7 @@ RSpec.describe Doctor do
     describe 'methods' do
       it 'returns attribute key values' do
       meredith = Doctor.new({name: "Meredith Grey", specialty: "General Surgery", education: "Harvard University", salary: 100_000})
-
+      # require'pry';binding.pry
       expect(meredith.name).to eq("Meredith Grey")
       expect(meredith.specialty).to eq("General Surgery")
       expect(meredith.education).to eq("Harvard University")
